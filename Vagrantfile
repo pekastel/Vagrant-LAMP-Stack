@@ -49,7 +49,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "app::packages"
     chef.add_recipe "app::web_server"
     chef.add_recipe "app::vhost"
-    chef.add_recipe "memcached"
+    #chef.add_recipe "memcached"
     chef.add_recipe "app::db"
     chef.json = {
       :app => {
@@ -70,7 +70,7 @@ Vagrant.configure("2") do |config|
         :packages   => %w{ vim git screen curl },
         
         # PHP packages
-        :php_packages   => %w{ php5-mysqlnd php5-curl php5-mcrypt php5-memcached php5-gd }
+        :php_packages   => %w{ php5-mysqlnd php5-curl php5-mcrypt php5-gd }
       },
       :mysql => {
         :server_root_password   => database_password,
