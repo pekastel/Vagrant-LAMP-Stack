@@ -44,5 +44,6 @@ bash "wp-cli" do
   	chmod +x wp-cli.phar
 	sudo mv wp-cli.phar /usr/local/bin/wp
 	chmod 777 /var/www/projectname
+	ln -s /home/vagrant/theme /var/www/projectname/wp-content/themes/theme
   EOH
 end

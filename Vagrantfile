@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
   # Set share folder
-  config.vm.synced_folder "./theme" , "/var/www/" + project_name + "/wp-content/themes/theme", :mount_options => ["dmode=777", "fmode=666"]
+  config.vm.synced_folder "./theme" , "/home/vagrant/theme/", :mount_options => ["dmode=777", "fmode=666"]
 
   # Use hostonly network with a static IP Address and enable
   # hostmanager so we can have a custom domain for the server
