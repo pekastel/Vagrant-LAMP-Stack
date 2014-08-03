@@ -1,0 +1,18 @@
+path: /var/www/projectname/
+url: http://projectname.local
+user: admin
+color: false
+
+core config:
+    dbname: wpdb
+    dbuser: root
+    dbpass: root
+    extra-php: |
+        define( 'WP_DEBUG', true );
+        define( 'WP_POST_REVISIONS', 50 );
+
+core install:
+    title: Projectname
+    admin_user: admin
+    admin_password: admin
+    admin_email: pcastillo@3nodos.com.ar
